@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Google Practise session Test suite]">
+  <listeners>
+    <listener class-name="com.crm.qa.util.CustomListener"/>
+    <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test name="Google Practise session Test Cases(failed)">
     <classes>
-      <class name="com.crm.qa.testcases.FreeCrmTest">
+      <class name="com.crm.qa.testcases.GooglePageTest">
         <methods>
+          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="freeCrmTitleTest"/>
+          <include name="loginPageTitleTest"/>
         </methods>
-      </class> <!-- com.crm.qa.testcases.FreeCrmTest -->
+      </class> <!-- com.crm.qa.testcases.GooglePageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Google Practise session Test Cases(failed) -->
+</suite> <!-- Failed suite [Google Practise session Test suite] -->

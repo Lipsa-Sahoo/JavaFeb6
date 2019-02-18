@@ -2,27 +2,29 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="59031" started-at="2018-07-01T07:42:53Z" finished-at="2018-07-01T07:43:52Z">
+  <suite name="Google Practise session Test suite" duration-ms="7024" started-at="2019-02-12T07:05:37Z" finished-at="2019-02-12T07:05:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="59031" started-at="2018-07-01T07:42:53Z" finished-at="2018-07-01T07:43:52Z">
-      <class name="com.crm.qa.testcases.FreeCrmTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.FreeCrmTest@1cbbffcd]" name="setUp" is-config="true" duration-ms="7246" started-at="2018-07-01T13:12:53Z" finished-at="2018-07-01T13:13:00Z">
+    <test name="Google Practise session Test Cases" duration-ms="7024" started-at="2019-02-12T07:05:37Z" finished-at="2019-02-12T07:05:44Z">
+      <class name="com.crm.qa.testcases.GooglePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.GooglePageTest@42d80b78]" name="setUp" is-config="true" duration-ms="5512" started-at="2019-02-12T12:35:37Z" finished-at="2019-02-12T12:35:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="freeCrmTitleTest()[pri:0, instance:com.crm.qa.testcases.FreeCrmTest@1cbbffcd]" name="freeCrmTitleTest" duration-ms="51754" started-at="2018-07-01T13:13:00Z" finished-at="2018-07-01T13:13:52Z">
+        <test-method status="FAIL" signature="loginPageTitleTest()[pri:1, instance:com.crm.qa.testcases.GooglePageTest@42d80b78]" name="loginPageTitleTest" duration-ms="26" started-at="2019-02-12T12:35:43Z" finished-at="2019-02-12T12:35:43Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[expected [#1 Free CRM for Any Business: Online Customer Relationship Software] but found [Google]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+              <![CDATA[java.lang.AssertionError: expected [#1 Free CRM for Any Business: Online Customer Relationship Software] but found [Google]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertTrue(Assert.java:41)
-	at org.testng.Assert.assertTrue(Assert.java:51)
-	at com.crm.qa.testcases.FreeCrmTest.freeCrmTitleTest(FreeCrmTest.java:41)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at com.crm.qa.testcases.GooglePageTest.loginPageTitleTest(GooglePageTest.java:26)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -53,8 +55,12 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- freeCrmTitleTest -->
-      </class> <!-- com.crm.qa.testcases.FreeCrmTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.GooglePageTest@42d80b78]" name="tearDown" is-config="true" duration-ms="674" started-at="2019-02-12T12:35:43Z" finished-at="2019-02-12T12:35:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crm.qa.testcases.GooglePageTest -->
+    </test> <!-- Google Practise session Test Cases -->
+  </suite> <!-- Google Practise session Test suite -->
 </testng-results>
